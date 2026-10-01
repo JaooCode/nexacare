@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NexaCare</title>
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/webjars/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/nexacare.css">
+</head>
+<body>
+  <aside id="sidebar" class="sidebar" aria-label="Menu principal">
+    <a class="brand" href="#/dashboard">
+      <img src="/img/logo.svg" alt="">
+      <span><strong>NexaCare</strong><small>NexaTech Solutions</small></span>
+    </a>
+    <nav id="menu" class="nav flex-column"></nav>
+    <div class="sidebar-footer">
+      <div id="rodapeUsuario" class="mb-2"></div>
+      <button id="btnSair" class="btn btn-sm btn-outline-light w-100"><i class="bi bi-box-arrow-left me-1"></i>Sair</button>
+    </div>
+  </aside>
+  <div id="backdrop" class="sidebar-backdrop"></div>
+
+  <div class="main">
+    <header class="topbar">
+      <button id="btnMenu" class="btn btn-outline-secondary d-lg-none" aria-label="Abrir menu"><i class="bi bi-list"></i></button>
+      <h1 id="tituloPagina">NexaCare</h1>
+      <div class="ms-auto d-flex align-items-center gap-2">
+        <a href="#/notificacoes" class="btn btn-outline-secondary position-relative" aria-label="Notificações" title="Notificações">
+          <i class="bi bi-bell"></i>
+          <span id="badgeNotif" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-none">0</span>
+        </a>
+        <span id="topoUsuario" class="d-none d-md-inline small text-secondary"></span>
+      </div>
+    </header>
+    <main id="view" class="content" tabindex="-1"></main>
+    <footer class="app-footer">
+      NexaCare &middot; NexaTech Solutions &middot; Protótipo acadêmico com dados fictícios.
+      <a href="/privacidade.html" target="_blank" rel="noopener">Política de privacidade (LGPD)</a>
+    </footer>
+  </div>
+
+  <script src="/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

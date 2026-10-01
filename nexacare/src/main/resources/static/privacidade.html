@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidade · NexaCare</title>
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/webjars/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/nexacare.css">
+</head>
+<body>
+  <nav class="navbar landing-nav"><div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="/"><img src="/img/logo.svg" width="32" height="32" alt="">NexaCare</a>
+    <a class="btn btn-primary btn-sm" href="/login.html">Entrar</a></div></nav>
+  <main class="container py-5" style="max-width:820px">
+    <h1 class="h2 mb-1">Política de privacidade e proteção de dados</h1>
+    <p class="text-secondary">Resumo aplicável ao protótipo NexaCare (NexaTech Solutions), em linha com a Lei Geral de Proteção de Dados (Lei 13.709/2018).</p>
+
+    <h2 class="h5 mt-4">1. Finalidade</h2>
+    <p>Os dados são utilizados <strong>somente</strong> para as finalidades necessárias ao serviço: cadastrar pacientes, agendar, confirmar, remarcar e cancelar consultas, e comunicar lembretes e alterações.</p>
+
+    <h2 class="h5 mt-4">2. Dados coletados (minimização)</h2>
+    <ul><li>Paciente: nome, CPF, data de nascimento, telefone, e-mail e uma observação administrativa opcional.</li>
+      <li>Profissional: nome, especialidade, registro profissional (quando aplicável), telefone e e-mail.</li>
+      <li>Usuário do sistema: nome, e-mail e senha (armazenada apenas como hash BCrypt).</li></ul>
+    <div class="alert alert-info"><strong>O NexaCare não armazena informações clínicas</strong> (diagnósticos, exames, prontuários ou sintomas). Não registre esses dados nos campos de observação.</div>
+
+    <h2 class="h5 mt-4">3. Quem acessa</h2>
+    <p>Cada perfil acessa somente o necessário: a recepção vê o cadastro completo dos pacientes; o profissional vê apenas a própria agenda e dados mínimos dos seus pacientes (sem CPF e e-mail); o paciente vê apenas as próprias consultas; o administrador gerencia usuários e configurações e vê indicadores.</p>
+
+    <h2 class="h5 mt-4">4. Segurança</h2>
+    <ul><li>Autenticação por login e senha, com bloqueio temporário após tentativas inválidas.</li>
+      <li>Controle de acesso validado no servidor em cada requisição.</li>
+      <li>Mensagens de erro que não expõem detalhes técnicos nem dados sensíveis.</li></ul>
+
+    <h2 class="h5 mt-4">5. Seus direitos</h2>
+    <p>Você pode solicitar à clínica confirmação de tratamento, acesso, correção, anonimização ou exclusão dos seus dados, conforme a LGPD. Cadastros desativados preservam apenas o histórico de consultas necessário à gestão da clínica.</p>
+
+    <h2 class="h5 mt-4">6. Sobre este protótipo</h2>
+    <p>Todos os dados exibidos na demonstração são <strong>fictícios</strong>. Lembretes e notificações são simulados e nenhum e-mail, SMS ou WhatsApp real é enviado.</p>
+    <a href="/" class="btn btn-outline-primary mt-3"><i class="bi bi-arrow-left me-1"></i>Voltar</a>
+  </main>
+</body>
+</html>

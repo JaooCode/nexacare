@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NexaCare — Agendamento e gestão de consultas</title>
+  <meta name="description" content="NexaCare: agendamento de consultas simples, seguro e responsivo para clínicas e consultórios.">
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/webjars/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/nexacare.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg landing-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#topo"><img src="/img/logo.svg" width="34" height="34" alt="">NexaCare</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLanding" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navLanding">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#beneficios">Benefícios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#funcionalidades">Funcionalidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#seguranca">Segurança</a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary ms-lg-2 mb-2 mb-lg-0" href="/login.html?aba=cadastro">Criar conta de paciente</a></li>
+          <li class="nav-item"><a class="btn btn-primary" href="/login.html"><i class="bi bi-box-arrow-in-right me-1"></i>Entrar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="topo">
+    <div class="container"><div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="badge rounded-pill text-bg-light mb-3">NexaTech Solutions · Saúde</span>
+        <h1 class="display-4">Agenda da clínica organizada, do primeiro contato à consulta.</h1>
+        <p class="lead my-4">O NexaCare centraliza agendamentos, confirmações, remarcações e lembretes em um sistema simples, seguro e responsivo — sem planilhas, sem conflito de horários.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-light btn-lg text-primary fw-semibold" href="/login.html"><i class="bi bi-box-arrow-in-right me-1"></i>Entrar</a>
+          <a class="btn btn-outline-light btn-lg" href="/login.html?aba=cadastro">Sou paciente: criar conta</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="hero-card">
+          <div class="d-flex align-items-center gap-2 mb-3"><i class="bi bi-calendar-check fs-3"></i><strong>Agenda de hoje</strong></div>
+          <div class="d-flex justify-content-between border-bottom border-light border-opacity-25 py-2"><span>08:30</span><span>Bruno C. Souza</span><span class="badge text-bg-success">Confirmada</span></div>
+          <div class="d-flex justify-content-between border-bottom border-light border-opacity-25 py-2"><span>09:30</span><span>Carla M. Rocha</span><span class="badge text-bg-primary">Agendada</span></div>
+          <div class="d-flex justify-content-between py-2"><span>10:00</span><span class="text-info-emphasis">Horário disponível</span><i class="bi bi-plus-circle"></i></div>
+          <div class="small mt-2 opacity-75">Exemplo com dados fictícios.</div>
+        </div>
+      </div>
+    </div></div>
+  </header>
+
+  <section class="py-5" id="beneficios"><div class="container">
+    <div class="text-center mb-5"><h2 class="fw-bold">Menos improviso, mais atendimento</h2>
+      <p class="text-secondary">O que muda quando a clínica deixa o WhatsApp e as planilhas para trás.</p></div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4"><div class="card feature-card"><div class="card-body"><div class="icon"><i class="bi bi-shield-check"></i></div><h3 class="h5">Sem conflitos de horário</h3><p class="text-secondary mb-0">O sistema bloqueia dois agendamentos no mesmo horário para o profissional ou para o paciente.</p></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card feature-card"><div class="card-body"><div class="icon"><i class="bi bi-calendar3"></i></div><h3 class="h5">Agenda visual</h3><p class="text-secondary mb-0">Veja horários livres e ocupados por profissional e por data, em computador, tablet ou celular.</p></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card feature-card"><div class="card-body"><div class="icon"><i class="bi bi-bell"></i></div><h3 class="h5">Lembretes automáticos</h3><p class="text-secondary mb-0">Confirmação, lembrete, alteração e cancelamento comunicados ao paciente (simulados no protótipo).</p></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card feature-card"><div class="card-body"><div class="icon"><i class="bi bi-arrow-repeat"></i></div><h3 class="h5">Remarcar e cancelar fácil</h3><p class="text-secondary mb-0">Cancelamentos liberam o horário na hora e reduzem a agenda vazia.</p></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card feature-card"><div class="card-body"><div class="icon"><i class="bi bi-people"></i></div><h3 class="h5">Cada um vê o que precisa</h3><p class="text-secondary mb-0">Administrador, recepção, profissional e paciente com permissões diferentes.</p></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card feature-card"><div class="card-body"><div class="icon"><i class="bi bi-speedometer2"></i></div><h3 class="h5">Indicadores simples</h3><p class="text-secondary mb-0">Consultas do dia, horários livres, cancelamentos e remarcações pendentes em um só painel.</p></div></div></div>
+    </div>
+  </div></section>
+
+  <section class="py-5 bg-body-tertiary" id="funcionalidades"><div class="container">
+    <div class="text-center mb-5"><h2 class="fw-bold">Como funciona</h2></div>
+    <div class="row g-4 mb-5">
+      <div class="col-6 col-md-3 passo"><div class="num">1</div><h3 class="h6">Login</h3><p class="small text-secondary">Acesso conforme o perfil do usuário.</p></div>
+      <div class="col-6 col-md-3 passo"><div class="num">2</div><h3 class="h6">Escolha paciente e profissional</h3><p class="small text-secondary">Busca rápida e filtro por especialidade.</p></div>
+      <div class="col-6 col-md-3 passo"><div class="num">3</div><h3 class="h6">Selecione data e horário livre</h3><p class="small text-secondary">Só aparecem horários realmente disponíveis.</p></div>
+      <div class="col-6 col-md-3 passo"><div class="num">4</div><h3 class="h6">Confirmação e lembrete</h3><p class="small text-secondary">Comprovante na hora, com opção de remarcar ou cancelar.</p></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3"><h3 class="h6 text-primary"><i class="bi bi-shield-lock me-1"></i>Administrador</h3><p class="small text-secondary mb-0">Indicadores, profissionais, usuários, permissões e configurações da clínica.</p></div>
+      <div class="col-md-6 col-lg-3"><h3 class="h6 text-primary"><i class="bi bi-headset me-1"></i>Recepção</h3><p class="small text-secondary mb-0">Cadastra pacientes, agenda, remarca, cancela e acompanha a agenda completa.</p></div>
+      <div class="col-md-6 col-lg-3"><h3 class="h6 text-primary"><i class="bi bi-heart-pulse me-1"></i>Profissional</h3><p class="small text-secondary mb-0">Vê somente a própria agenda e marca consultas como realizadas.</p></div>
+      <div class="col-md-6 col-lg-3"><h3 class="h6 text-primary"><i class="bi bi-person me-1"></i>Paciente</h3><p class="small text-secondary mb-0">Agenda, confirma, cancela, pede remarcação e vê seus lembretes.</p></div>
+    </div>
+  </div></section>
+
+  <section class="py-5 secao-seguranca" id="seguranca"><div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-5"><h2 class="fw-bold">Segurança e privacidade em primeiro lugar</h2>
+        <p class="opacity-75">Dados de saúde exigem cuidado. O NexaCare foi pensado com a LGPD desde o início.</p>
+        <a href="/privacidade.html" class="btn btn-outline-light">Ler a política de privacidade</a></div>
+      <div class="col-lg-7"><div class="row g-3">
+        <div class="col-sm-6 d-flex gap-3"><i class="bi bi-database-lock icon-lg"></i><div><strong>Coleta mínima</strong><div class="small opacity-75">Somente o necessário para agendar. Nenhum dado clínico é armazenado.</div></div></div>
+        <div class="col-sm-6 d-flex gap-3"><i class="bi bi-key icon-lg"></i><div><strong>Senhas protegidas</strong><div class="small opacity-75">Guardadas apenas como hash BCrypt, nunca em texto puro.</div></div></div>
+        <div class="col-sm-6 d-flex gap-3"><i class="bi bi-person-lock icon-lg"></i><div><strong>Acesso por perfil</strong><div class="small opacity-75">Cada função vê somente as informações de que precisa. CPF é restrito à recepção.</div></div></div>
+        <div class="col-sm-6 d-flex gap-3"><i class="bi bi-exclamation-octagon icon-lg"></i><div><strong>Erros sem exposição</strong><div class="small opacity-75">Mensagens claras, sem detalhes técnicos ou dados sensíveis.</div></div></div>
+      </div></div>
+    </div>
+  </div></section>
+
+  <section class="py-5"><div class="container text-center">
+    <h2 class="fw-bold mb-3">Pronto para testar o NexaCare?</h2>
+    <p class="text-secondary">Use os acessos de demonstração na tela de login e explore cada perfil.</p>
+    <a class="btn btn-primary btn-lg" href="/login.html">Entrar no sistema</a>
+  </div></section>
+
+  <footer class="footer-landing py-4"><div class="container d-flex flex-wrap justify-content-between gap-2">
+    <div><strong class="text-white">NexaCare</strong> — produto da NexaTech Solutions<div class="small">Protótipo acadêmico · Laboratório de Empreendimentos Inovadores. Todos os dados são fictícios.</div></div>
+    <div class="d-flex gap-3 align-items-start"><a href="/privacidade.html">Política de privacidade</a><a href="/login.html">Entrar</a></div>
+  </div></footer>
+
+  <script src="/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

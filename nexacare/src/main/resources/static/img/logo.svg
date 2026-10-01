@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="NexaCare">
+  <rect width="48" height="48" rx="12" fill="#0f766e"/>
+  <path d="M20 10h8v10h10v8H28v10h-8V28H10v-8h10z" fill="#ffffff"/>
+  <path d="M8 24h9l3-6 5 13 3-7h12" fill="none" stroke="#5eead4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

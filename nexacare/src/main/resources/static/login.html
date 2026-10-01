@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar · NexaCare</title>
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/webjars/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/nexacare.css">
+</head>
+<body>
+  <div class="login-wrap">
+    <div class="w-100" style="max-width:460px">
+      <div class="text-center text-white mb-3">
+        <a href="/" class="text-white text-decoration-none d-inline-flex align-items-center gap-2"><img src="/img/logo.svg" width="44" height="44" alt=""><span class="fs-3 fw-bold">NexaCare</span></a>
+        <div class="small opacity-75">NexaTech Solutions</div>
+      </div>
+      <div class="card login-card shadow-lg"><div class="card-body p-4">
+        <ul class="nav nav-pills nav-fill mb-3" role="tablist">
+          <li class="nav-item"><button class="nav-link active" id="abaEntrar" data-bs-toggle="pill" data-bs-target="#painelEntrar" type="button">Entrar</button></li>
+          <li class="nav-item"><button class="nav-link" id="abaCadastro" data-bs-toggle="pill" data-bs-target="#painelCadastro" type="button">Sou paciente: criar conta</button></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="painelEntrar">
+            <div id="loginAviso" class="alert alert-warning d-none" role="alert">Sua sessão expirou. Entre novamente.</div>
+            <div id="loginErro" class="alert alert-danger d-none" role="alert"></div>
+            <form id="formLogin" novalidate>
+              <div class="mb-3"><label class="form-label" for="email">E-mail</label>
+                <input id="email" type="email" class="form-control" autocomplete="username" placeholder="voce@exemplo.com" required>
+                <div class="invalid-feedback">Informe um e-mail válido.</div></div>
+              <div class="mb-2"><label class="form-label" for="senha">Senha</label>
+                <div class="input-group"><input id="senha" type="password" class="form-control" autocomplete="current-password" required>
+                  <button class="btn btn-outline-secondary" type="button" id="verSenha" aria-label="Mostrar ou ocultar senha"><i class="bi bi-eye"></i></button>
+                  <div class="invalid-feedback">Informe a senha.</div></div></div>
+              <div class="text-end mb-3"><button type="button" class="btn btn-link btn-sm p-0" id="esqueci">Esqueci minha senha</button></div>
+              <button class="btn btn-primary w-100" type="submit" id="btnEntrar"><i class="bi bi-box-arrow-in-right me-1"></i>Entrar</button>
+            </form>
+            <hr>
+            <div class="small text-secondary mb-2"><i class="bi bi-flask me-1"></i>Acessos de demonstração (clique para preencher):</div>
+            <div class="demo-chips d-flex flex-wrap gap-1">
+              <button class="btn btn-outline-secondary" data-demo="administrador@nexacare.com|Admin@123">Administrador</button>
+              <button class="btn btn-outline-secondary" data-demo="recepcao@nexacare.com|Recep@123">Recepcionista</button>
+              <button class="btn btn-outline-secondary" data-demo="medico@nexacare.com|Medico@123">Profissional</button>
+              <button class="btn btn-outline-secondary" data-demo="paciente@nexacare.com|Paciente@123">Paciente</button>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="painelCadastro">
+            <div id="cadErro" class="alert alert-danger d-none" role="alert"></div>
+            <div id="cadOk" class="alert alert-success d-none" role="status"></div>
+            <form id="formCadastro" novalidate>
+              <div class="mb-2"><label class="form-label" for="cNome">Nome completo *</label><input id="cNome" class="form-control" maxlength="120" required><div class="invalid-feedback">Informe o nome completo.</div></div>
+              <div class="row g-2 mb-2">
+                <div class="col-sm-6"><label class="form-label" for="cCpf">CPF *</label><input id="cCpf" class="form-control" data-mask="cpf" inputmode="numeric" placeholder="000.000.000-00" required><div class="invalid-feedback">CPF inválido.</div></div>
+                <div class="col-sm-6"><label class="form-label" for="cNasc">Nascimento *</label><input id="cNasc" type="date" class="form-control" min="1900-01-01" required><div class="invalid-feedback">Data inválida.</div></div>
+              </div>
+              <div class="row g-2 mb-2">
+                <div class="col-sm-6"><label class="form-label" for="cTel">Telefone *</label><input id="cTel" class="form-control" data-mask="telefone" inputmode="tel" placeholder="(00) 00000-0000" required><div class="invalid-feedback">Informe telefone com DDD.</div></div>
+                <div class="col-sm-6"><label class="form-label" for="cEmail">E-mail *</label><input id="cEmail" type="email" class="form-control" maxlength="120" required><div class="invalid-feedback">E-mail inválido.</div></div>
+              </div>
+              <div class="mb-2"><label class="form-label" for="cSenha">Senha *</label><input id="cSenha" type="password" class="form-control" autocomplete="new-password" required>
+                <div class="invalid-feedback">Mínimo 8 caracteres, com letras e números.</div></div>
+              <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="cLgpd"><label class="form-check-label small" for="cLgpd">
+                Li e concordo com a <a href="/privacidade.html" target="_blank" rel="noopener">política de privacidade</a>: meus dados serão usados apenas para agendamento e contato sobre consultas.</label>
+                <div class="invalid-feedback">É necessário aceitar a política de privacidade.</div></div>
+              <button class="btn btn-primary w-100" type="submit" id="btnCadastro"><i class="bi bi-person-plus me-1"></i>Criar minha conta</button>
+            </form>
+          </div>
+        </div>
+      </div></div>
+      <div class="text-center mt-3"><a href="/" class="text-white small"><i class="bi bi-arrow-left me-1"></i>Voltar ao início</a></div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalSenha" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h2 class="modal-title fs-5">Recuperar senha</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div>
+    <form id="formSenha" novalidate><div class="modal-body">
+      <p class="small text-secondary">Informe seu e-mail. <strong>(Simulação:</strong> nenhum e-mail é enviado de verdade.)</p>
+      <div id="senhaMsg" class="alert alert-info d-none" role="status"></div>
+      <label class="form-label" for="emailRec">E-mail</label><input id="emailRec" type="email" class="form-control" required>
+      <div class="invalid-feedback">Informe um e-mail válido.</div></div>
+      <div class="modal-footer"><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button><button class="btn btn-primary" type="submit">Enviar instruções</button></div></form>
+  </div></div></div>
+
+  <script src="/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/js/login.js"></script>
+</body>
+</html>
